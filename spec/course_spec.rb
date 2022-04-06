@@ -22,4 +22,13 @@ describe 'Course' do
 
     expect(course.students).to eq []
   end
+
+end
+
+describe 'Full?' do
+  it 'has a method that returns a boolean if the course is full' do
+    course = Course.new("Calculus", 2)
+
+    expect(course.full?).to eq false
+  end
 end
